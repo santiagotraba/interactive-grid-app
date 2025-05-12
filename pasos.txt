@@ -1,2 +1,0 @@
-4. Optimizar la cuadrícula para que ocupe toda la pantalla
-Asegurarte de que la cuadrícula se ajuste dinámicamente al tamaño de la ventana sin scroll.
