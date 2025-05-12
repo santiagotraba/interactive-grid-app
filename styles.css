@@ -1,0 +1,64 @@
+* { 
+    box-sizing: border-box; 
+}
+
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(100, 1fr); 
+    grid-auto-rows: 1fr; 
+    width: 100vw; 
+    height: 100vh; 
+}
+
+.cell { 
+    border: 1px solid #ccc; 
+    transition: background-color 0.3s; 
+}
+
+.cell.active { 
+    background-color: #3498db; 
+}
+
+.cell.inactive { 
+    background-color: #ecf0f1; 
+}
+
+.context-menu { 
+    display: none; 
+    position: absolute; 
+    background-color: white; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+    padding: 10px; 
+}
+
+.context-menu-item { 
+    padding: 5px 10px; 
+    cursor: pointer; 
+}
+
+.context-menu-item:hover { 
+    background-color: #f0f0f0; 
+}
+
+.hidden {
+    display: none;
+}
+
+.color-option {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
